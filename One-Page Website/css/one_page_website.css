@@ -1,0 +1,50 @@
+body {
+    background-color: #DCE1E3;
+    font-family: Didot;
+    font-size: 18px;
+}
+
+/*----------------RSVP STYLING--------------*/
+
+#visit {
+    text-align: center;
+    font-size: 36px;
+}
+
+#visit h3 {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+#visit p {
+    font-size: 20px;
+    line-height: 10%;
+}
+
+.form-rsvp {
+    text-align: center;
+}
+
+.rsvp {
+    font-size: 16px;
+    border: 1px 1px 1px 1px #5C5F58;
+    border-radius: 3px;
+    margin: 10px 1em;
+    display: inline;
+}
+
+.submit input[type="submit"] {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: Didot;
+    font-size: 16px;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #5C5F58;
+    color: #fff;
+    transition: 0.1s;
+}
