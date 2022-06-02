@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="./JS/one_page_website.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>ARKANSAS</h1>
+        <p>A hidden gem in middle America</p>
+            <!--
+          <ul>
+            <a href="#home" id="link"><li>HOME</li></a>
+            <a href="#gallery" id="gallery"><li>GALLERY</li</a>
+            <a href="#visit" id="link"><li>VISIT</li></a>
+          </ul>
+        -->
+      </header>
+
+<div class="row" id="gallery">
+    <div class="column">
+      <img src="images/buffaloRiver.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="200px" width="400px">
+    </div>
+    <div class="column">
+      <img src="images/budWalton.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="200px" width="420px">
+    </div>
+    <div class="column">
+      <img src="images/crystalBridges.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="200px" width="360px">
+    </div>
+    <div class="column">
+      <img src="images/alotian.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="200px" width="420px">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/buffaloRiver.jpg" height="700px" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/budWalton.jpg" height="700px" width="100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/crystalBridges.jpg" height="700px" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/alotian.jpeg" height="700px" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/buffaloRiver.jpg" onclick="currentSlide(1)" alt="Buffalo National River | the First of its Kind" height="70px" width="150px">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/budWalton.jpg" onclick="currentSlide(2)" alt="Bud Walton Arena, in Fayetteville | Home of the Razorbacks" height="70px" width="150px">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/crystalBridges.jpg" onclick="currentSlide(3)" alt="Crystal Bridges Museum of American Art | Bentonville (home of Walmart)" height="70px" width="140px">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/alotian.jpeg" onclick="currentSlide(4)" alt="Alotian Golf Club in Central Arkansas | An exclusive golf club founded by Warren Stephens" height="70px" width="150px ">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
